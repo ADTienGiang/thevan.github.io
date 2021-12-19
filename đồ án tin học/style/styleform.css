@@ -1,0 +1,568 @@
+/* ------------------------------------ Click on login and Sign Up to  changue and view the effect
+---------------------------------------
+*/
+
+* {
+    margin: 0px auto;
+    padding: 0px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+
+
+  body{
+    height: 100vh;
+    text-align: center;
+  }
+    /*Trigger Button*/
+  .login-trigger {
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(to bottom right, #B05574, #F87E7B);
+    padding: 15px 30px;
+    border-radius: 30px;
+    position: relative; 
+    top: 50%;
+  }
+  
+  /*Modal*/
+  h4 {
+    font-weight: bold;
+    color: #fff;
+  }
+  .close {
+    color: #fff;
+    transform: scale(1.2)
+  }
+  .modal-content {
+    font-weight: bold;
+    background: linear-gradient(to bottom right,#F87E7B,#B05574);
+  }
+  .form-control {
+    margin: 1em 0;
+  }
+  .form-control:hover, .form-control:focus {
+    box-shadow: none;  
+    border-color: #fff;
+  }
+  .username, .password {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 2px solid #eee;
+    padding-left: 0;
+    font-weight: normal;
+    background: transparent;  
+  }
+  .form-control::-webkit-input-placeholder {
+    color: #eee;  
+  }
+  .form-control:focus::-webkit-input-placeholder {
+    font-weight: bold;
+    color: #fff;
+  }
+  .login {
+    padding: 6px 20px;
+    border-radius: 20px;
+    background: none;
+    border: 2px solid #FAB87F;
+    color: #FAB87F;
+    font-weight: bold;
+    transition: all .5s;
+    margin-top: 1em;
+  }
+  .login:hover {
+    background: #FAB87F;
+    color: #fff;
+  }
+
+
+
+
+
+
+
+/*******************************
+* ACCORDION WITH TOGGLE ICONS
+* Does not work properly if "in" is added after "collapse".
+*******************************/
+.panel-group .panel {
+  border-radius: 0;
+  box-shadow: none;
+  border-color: #EEEEEE;
+}
+
+.panel-default > .panel-heading {
+  padding: 0;
+  border-radius: 0;
+  color: #212121;
+  background-color: #FAFAFA;
+  border-color: #EEEEEE;
+}
+
+.panel-title {
+  font-size: 14px;
+}
+
+.panel-title > a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.more-less {
+  float: right;
+  color: #212121;
+}
+
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #EEEEEE;
+}
+
+/* ----- v CAN BE DELETED v ----- */
+
+
+.demo {
+padding-top: 60px;
+padding-bottom: 110px;
+}
+
+.demo-footer {
+position: fixed;
+bottom: 0;
+width: 100%;
+padding: 15px;
+background-color: #212121;
+text-align: center;
+}
+
+.demo-footer > a {
+text-decoration: none;
+font-weight: bold;
+font-size: 14px;
+color: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------ Click on login and Sign Up to  changue and view the effect
+---------------------------------------
+*/
+
+
+
+
+
+
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #e95846;
+  text-decoration: none;
+}
+
+.pricing-table-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2.6em;
+  color: #FFF;
+  margin-top: 15px;
+  text-align: left;
+  margin-bottom: 25px;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+.pricing-table-title a {
+  font-size: 0.6em;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 0;
+  clear: both;
+}
+/** ========================
+ * Contenedor
+ ============================*/
+.pricing-wrapper {
+  width: 960px;
+  margin: 40px auto 0;
+}
+
+.pricing-table {
+  margin: 0 10px;
+  text-align: center;
+  width: 300px;
+  float: left;
+  -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.pricing-table:hover {
+  -webkit-transform: scale(1.06);
+  -ms-transform: scale(1.06);
+  -o-transform: scale(1.06);
+  transform: scale(1.06);
+}
+
+.pricing-title {
+  color: #FFF;
+  background: #e95846;
+  padding: 20px 0;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+.pricing-table.recommended .pricing-title {
+  background: #2db3cb;
+}
+
+.pricing-table.recommended .pricing-action {
+  background: #2db3cb;
+}
+
+.pricing-table .price {
+  background: #403e3d;
+  font-size: 3.4em;
+  font-weight: 700;
+  padding: 20px 0;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+
+.pricing-table .price sup {
+  font-size: 0.4em;
+  position: relative;
+  left: 5px;
+}
+
+.table-list {
+  background: #FFF;
+  color: #403d3a;
+}
+
+.table-list li {
+  font-size: 1.4em;
+  font-weight: 700;
+  padding: 12px 8px;
+}
+
+.table-list li:before {
+  content: "\f00c";
+  font-family: 'FontAwesome';
+  color: #3fab91;
+  display: inline-block;
+  position: relative;
+  right: 5px;
+  font-size: 16px;
+} 
+
+.table-list li span {
+  font-weight: 400;
+}
+
+.table-list li span.unlimited {
+  color: #FFF;
+  background: #e95846;
+  font-size: 0.9em;
+  padding: 5px 7px;
+  display: inline-block;
+  -webkit-border-radius: 38px;
+  -moz-border-radius: 38px;
+  border-radius: 38px;
+}
+
+
+.table-list li:nth-child(2n) {
+  background: #F0F0F0;
+}
+
+.table-buy {
+  background: #FFF;
+  padding: 15px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.table-buy p {
+  float: left;
+  color: #37353a;
+  font-weight: 700;
+  font-size: 2.4em;
+}
+
+.table-buy p sup {
+  font-size: 0.5em;
+  position: relative;
+  left: 5px;
+}
+
+.table-buy .pricing-action {
+  float: right;
+  color: #FFF;
+  background: #e95846;
+  padding: 10px 16px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  font-weight: 700;
+  font-size: 1.4em;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.table-buy .pricing-action:hover {
+  background: #cf4f3e;
+}
+
+.recommended .table-buy .pricing-action:hover {
+  background: #228799;	
+}
+
+/** ================
+ * Responsive
+ ===================*/
+ @media only screen and (min-width: 768px) and (max-width: 959px) {
+   .pricing-wrapper {
+     width: 768px;
+   }
+
+   .pricing-table {
+     width: 236px;
+   }
+  
+  .table-list li {
+    font-size: 1.3em;
+  }
+
+ }
+ 
+ @media only screen and (max-width: 767px) {
+   .pricing-wrapper {
+     width: 420px;
+   }
+
+   .pricing-table {
+     display: block;
+     float: none;
+     margin: 0 0 20px 0;
+     width: 100%;
+   }
+ }
+
+@media only screen and (max-width: 479px) {
+  .pricing-wrapper {
+    width: 300px;
+  }
+} 
+@media only screen  and (max-width:1340px){
+  .pricing-table {
+    display: block;
+    float: none;
+    margin: 0 20px 0 0;
+    width: 100%;
+  }
+  .pricing-wrapper {
+    margin: 0 20px 0 0;
+    width: 100%;
+  }
+}
+@media only screen  and (max-width:1024px){
+  .pricing-wrapper {
+    margin-left: 25%;
+    width: 100%;
+  }
+}
+@media only screen  and (max-width:768px){
+  .pricing-wrapper {
+
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #414A53;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  left: 0;
+  top: 10%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .animate{
+    width: 75%;
+  }
+  .imgcontainer {
+    width: 100%;
+  }
+.formlogin {
+  width: 100%;
+}
+.nutcacel {
+  width: 100%;
+}
+}
+@media only screen and (min-width: 1025px)  {
+ 
+  .animate{
+    width: 75%;
+  }
+  .imgcontainer {
+    width: 100%;
+  }
+.formlogin {
+  width: 100%;
+}
+.nutcacel {
+  width: 100%;
+}
+.demo {
+  width: 75%;
+}
+
+}
+/* @media only screen and (min-width: 1024px) and (min-width: 1025px){
+  body {
+    width: 100%;
+  }
+} */
+@media only screen and (min-width: 0px)
+{
+  body {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+{
+  .clearfix {
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+
+  
